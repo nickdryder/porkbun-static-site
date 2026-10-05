@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>nick d ryder | artist</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            background-color: #0a0a0a;
+            color: #e0e0e0;
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        header {
+            padding: 3rem 2rem;
+            text-align: center;
+            border-bottom: 1px solid #222;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+            font-weight: 300;
+            letter-spacing: 2px;
+            text-transform: lowercase;
+        }
+
+        .subtitle {
+            font-size: 1.1rem;
+            color: #999;
+            font-weight: 300;
+            text-transform: lowercase;
+        }
+
+        main {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        section {
+            margin: 4rem 0;
+        }
+
+        h2 {
+            font-size: 1.8rem;
+            margin-bottom: 1.5rem;
+            font-weight: 300;
+            letter-spacing: 1px;
+            border-bottom: 1px solid #222;
+            padding-bottom: 1rem;
+            text-transform: lowercase;
+        }
+
+        .about {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .about p {
+            font-size: 1.05rem;
+            color: #ccc;
+            margin-bottom: 1rem;
+            text-align: justify;
+            text-transform: lowercase;
+        }
+
+        .social-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            flex-wrap: wrap;
+            margin: 2rem 0;
+        }
+
+        .social-btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background-color: #1a1a1a;
+            border: 1px solid #333;
+            color: #e0e0e0;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            font-size: 1.2rem;
+            text-transform: lowercase;
+        }
+
+        .social-btn:hover {
+            background-color: #2a2a2a;
+            border-color: #555;
+            transform: translateY(-2px);
+        }
+
+        .social-btn.instagram:hover {
+            border-color: #e4405f;
+            color: #e4405f;
+        }
+
+        .social-btn.twitter:hover {
+            border-color: #1da1f2;
+            color: #1da1f2;
+        }
+
+        .social-btn.artstation:hover {
+            border-color: #13adc7;
+            color: #13adc7;
+        }
+
+        .social-btn.behance:hover {
+            border-color: #0057ff;
+            color: #0057ff;
+        }
+
+        .social-btn.email:hover {
+            border-color: #ea4c89;
+            color: #ea4c89;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .gallery-item {
+            aspect-ratio: 1;
+            background-color: #1a1a1a;
+            border: 1px solid #222;
+            border-radius: 4px;
+            overflow: hidden;
+            position: relative;
+            transition: all 0.3s ease;
+        }
+
+        .gallery-item:hover {
+            border-color: #444;
+            transform: translateY(-4px);
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.3s ease;
+        }
+
+        .gallery-item:hover img {
+            transform: scale(1.02);
+        }
+
+        .gallery-placeholder {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+            color: #555;
+            font-size: 3rem;
+        }
+
+        footer {
+            text-align: center;
+            padding: 3rem 2rem;
+            border-top: 1px solid #222;
+            margin-top: 4rem;
+            color: #666;
+            font-size: 0.9rem;
+            text-transform: lowercase;
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2rem;
+            }
+
+            h2 {
+                font-size: 1.5rem;
+            }
+
+            .about p {
+                font-size: 1rem;
+            }
+
+            .gallery {
+                grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+                gap: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>nick d ryder</h1>
+        <p class="subtitle">artist & creator</p>
+    </header>
+
+    <main>
+        <section class="about">
+            <h2>about</h2>
+            <p>
+                welcome to my portfolio. i create meticulously crafted works, each piece signed and watermarked
+                to showcase my commitment to quality and originality. my work spans multiple mediums and styles,
+                blending technical skill with creative vision.
+            </p>
+            <p>
+                each piece in my gallery represents hours of dedication and artistic exploration. whether you're
+                here to view my latest creations or discuss a potential commission, i'm glad you stopped by.
+            </p>
+            
+            <div class="social-buttons">
+                <a href="https://instagram.com" class="social-btn instagram" title="instagram" aria-label="instagram">
+                    <span>📷</span>
+                </a>
+                <a href="https://twitter.com" class="social-btn twitter" title="twitter" aria-label="twitter">
+                    <span>𝕏</span>
+                </a>
+                <a href="https://artstation.com" class="social-btn artstation" title="artstation" aria-label="artstation">
+                    <span>🎨</span>
+                </a>
+                <a href="https://behance.net" class="social-btn behance" title="behance" aria-label="behance">
+                    <span>✦</span>
+                </a>
+                <a href="mailto:contact@example.com" class="social-btn email" title="email" aria-label="email">
+                    <span>✉</span>
+                </a>
+            </div>
+        </section>
+
+        <section>
+            <h2>gallery</h2>
+            <div class="gallery">
+                <div class="gallery-item">
+                    <div class="gallery-placeholder">📸</div>
+                </div>
+                <div class="gallery-item">
+                    <div class="gallery-placeholder">📸</div>
+                </div>
+                <div class="gallery-item">
+                    <div class="gallery-placeholder">📸</div>
+                </div>
+                <div class="gallery-item">
+                    <div class="gallery-placeholder">📸</div>
+                </div>
+                <div class="gallery-item">
+                    <div class="gallery-placeholder">📸</div>
+                </div>
+                <div class="gallery-item">
+                    <div class="gallery-placeholder">📸</div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 nick d ryder. all works watermarked and protected.</p>
+    </footer>
+</body>
+</html>
